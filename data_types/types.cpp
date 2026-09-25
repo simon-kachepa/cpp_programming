@@ -18,5 +18,13 @@ int main(){
     bool isMarried = true;
     std::cout<<"IsMarried: "<<isMarried <<'\n';
 
+    //String Literals
+    char name[] = {"Simon"};
+    std::cout<<name<<'\n';
+
+    std::string surname = "Kachepa";
+    std::cout<<surname<<'\n';
+
+
     return 0;
 }
