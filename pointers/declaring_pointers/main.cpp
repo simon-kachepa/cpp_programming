@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(){
-
+/*
     //Declaring Pointers and implicitly initialise them to nullptr
     int myNum {};
     int *ptr_myNum {};
@@ -33,6 +33,12 @@ int main(){
     ptr_num4 = &num4;
 
     std::cout<<"The value stored at the address ptr is: "<<*ptr_num4<<'\n';
+ */
+    //String literal
+    char *name {"Simon"};
+
+    std::cout<<name<<'\n';
+    std::cout<<*name<<'\n';
 
 
 
