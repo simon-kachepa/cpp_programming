@@ -7,12 +7,12 @@ class Car{
         int year {};
         std::string colour {};
 
-    
-    void display_info(){
-        std::cout<<"Make: "<<make<<'\n';
-        std::cout<<"Model: "<<model<<'\n';
-        std::cout<<"Year: "<<year<<'\n';
-        std::cout<<"Colour: "<<colour<<'\n';
+    public:
+        void display_info(){
+            std::cout<<"Make: "<<make<<'\n';
+            std::cout<<"Model: "<<model<<'\n';
+            std::cout<<"Year: "<<year<<'\n';
+            std::cout<<"Colour: "<<colour<<'\n';
         }
 };
 
