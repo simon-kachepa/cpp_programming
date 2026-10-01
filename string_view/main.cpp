@@ -32,8 +32,8 @@ int main()
 
     std::cout<<"Total allocations: "<<allocations<<'\n';
     */
-    /** 
-     * This program allocates on HEAP three times, when we allocate name, name_copy & name_copy_2
+    
+     // This program allocates on HEAP three times, when we allocate name, name_copy & name_copy_2
     
     std::string name {"Simon, this text should be long enough for it to be dynamically allocated"};
 
@@ -44,7 +44,27 @@ int main()
     std::cout<<copy_name<<'\n';
     std::cout<<copy_name_2<<'\n';
 
+    std::cout<<&name<<'\n';
+    std::cout<<&copy_name<<'\n';
+    std::cout<<&copy_name_2<<'\n';
+
+
     std::cout<<"Total allocations: "<<allocations<<'\n';
-    */
+   
+    //This Program uses the string_view and does not have any allocation on the HEAP
+    std::string_view message {"Simon, this text can't be allocated on HEAP regardless of its length"};
+    std::string_view message_2 {message};
+    std::string_view message_3 {message_2};
+
+    std::cout<<"*************STRING_VIEW**********\n";
+    std::cout<<message<<'\n';
+    std::cout<<message_2<<'\n';
+    std::cout<<message_3<<'\n';
+
+    std::cout<<&message<<'\n';
+    std::cout<<&message_2<<'\n';
+    std::cout<<&message_3<<'\n';
+    std::cout<<"Total allocations: "<<allocations<<'\n';
+
     return 0;
 }
