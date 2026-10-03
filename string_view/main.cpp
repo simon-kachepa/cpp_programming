@@ -34,6 +34,8 @@ int main()
     */
     
      // This program allocates on HEAP three times, when we allocate name, name_copy & name_copy_2
+     //However if the number of the characters are not much, less than 23 chars
+     // can then be allocated on the string pool
     
     std::string name {"Simon, this text should be long enough for it to be dynamically allocated"};
 
